@@ -1,8 +1,39 @@
 <!DOCTYPE html>
 <html>
+<head>
+<link rel="stylesheet" href="main.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js"></script>
+<script src="main.js"></script>
+</head>
 <body>
 
-<h1>Hi!</h1>
+<div id="interact">
+  >>>&nbspPRESS ANY KEY TO CONTINUE&nbsp<<<
+  <div class="typed-cursor">█</div>
+</div>
+
+<div id="typed-output"></div>
+
+<audio controls autoplay class="audio_player" id="audio_player">
+  <source src="./media/12days.mp3" type="audio/mpeg">
+  Sorry, your browser doesn't seem to support the audio format I'm using :(
+</audio>
+
+<script>
+  // Define the message content for this page
+  const pageMessage = `<h1>Merry Christmas Naomi!</h1>
+(if you're not Naomi, you're in the wrong place. maybe give AltaVista a shot?)
+^1000
+<br><br>
+<ol>
+<li><a href="1.html"><img style="max-width: 50wv; max-height: 30vh;"src="https://images.discerningassets.com/image/upload/v1575409664/Partridge16_zric05.jpg"></a> </li>
+</ol>
+^1000
+This year, I figured it might be fun to do all twelve days of Christmas, instead of just one. As such, please come back tomorrow too!`;
+
+  // Initialize the typed message with the content
+  initTypedMessage(pageMessage);
+</script>
 
 </body>
 </html>

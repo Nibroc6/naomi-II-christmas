@@ -1,0 +1,112 @@
+/* Yes, this CSS is AI-generated. Sorry! */
+
+  body {
+    background-color: #000;
+    color: #0f0;
+    font-family: 'Courier New', monospace;
+    padding: 40px;
+    line-height: 1.8;
+    font-size: 18px;
+  }
+  
+ a:visited {
+  color: inherit; /* This is where you put your custom color */
+}
+  
+  h1 {
+    color: #0f0;
+    text-shadow: 0 0 10px #0f0;
+    margin-bottom: 30px;
+  }
+  
+  .typed-cursor {
+    opacity: 1;
+    animation: blink 0.7s infinite;
+  }
+  
+  @keyframes blink {
+    0%, 49% { opacity: 1; }
+    50%, 100% { opacity: 0; }
+  }
+  
+  ol {
+    margin-top: 20px;
+  }
+  
+  li {
+    margin: 10px 0;
+  }
+  
+  /* CRT scanline effect */
+  body::before {
+    content: " ";
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: linear-gradient(rgba(18, 16, 16, 0) 50%, rgba(0, 0, 0, 0.25) 50%);
+    background-size: 100% 4px;
+    z-index: 2;
+    pointer-events: none;
+  }
+  
+  /* CRT flicker effect */
+  body::after {
+    content: " ";
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: rgba(18, 16, 16, 0.1);
+    opacity: 0;
+    z-index: 2;
+    pointer-events: none;
+    animation: flicker 0.15s infinite;
+  }
+  
+  @keyframes flicker {
+    0% { opacity: 0.27861; }
+    5% { opacity: 0.34769; }
+    10% { opacity: 0.23604; }
+    15% { opacity: 0.90626; }
+    20% { opacity: 0.18128; }
+    25% { opacity: 0.83891; }
+    30% { opacity: 0.65583; }
+    35% { opacity: 0.67807; }
+    40% { opacity: 0.26559; }
+    45% { opacity: 0.84693; }
+    50% { opacity: 0.96019; }
+    55% { opacity: 0.08594; }
+    60% { opacity: 0.20313; }
+    65% { opacity: 0.71988; }
+    70% { opacity: 0.53455; }
+    75% { opacity: 0.37288; }
+    80% { opacity: 0.71428; }
+    85% { opacity: 0.70419; }
+    90% { opacity: 0.7003; }
+    95% { opacity: 0.36108; }
+    100% { opacity: 0.24387; }
+  }
+  
+  #typed-output {
+    min-height: 300px;
+  }
+
+  #interact {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    z-index: 3;
+    font-size: 24px;
+    text-shadow: 0 0 20px #0f0;
+  }
+
+  .audio_player {
+    display: none;
+  }
