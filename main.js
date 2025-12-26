@@ -12,7 +12,7 @@ function initTypedMessage(messageContent) {
       contentType: 'html',
       loop: false,
       showCursor: true,
-      cursorChar: '█'
+      cursorChar: '\u2588'
     });
   }
 
