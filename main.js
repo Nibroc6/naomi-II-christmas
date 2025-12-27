@@ -6,7 +6,7 @@ function initTypedMessage(messageContent) {
     
     typedInstance = new Typed('#typed-output', {
       strings: [messageContent],
-      typeSpeed: 20,
+      typeSpeed: 15,
       startDelay: 700,
       backSpeed: 0,
       contentType: 'html',
